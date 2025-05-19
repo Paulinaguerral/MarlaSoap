@@ -1,0 +1,70 @@
+/* Extra small devices (portrait phones, less than 576px)
+No requiere para dispositivos pequeños
+*/
+body{
+    margin: 0;
+}
+header{
+    background-color: orange;
+    height: 100px;
+}
+nav{
+    background-color: blue;
+    height: 30px;
+}
+aside{
+    background-color: brown;
+    height: 100px;
+}
+article{
+    background-color: goldenrod;
+    height: 80px;
+    margin-bottom: 10px;
+}
+footer{
+    background-color: darkgray;
+    height: 80px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .flex{
+        display: flex;
+        column-gap: 20px;
+    }
+    .wrap{
+        flex-wrap: wrap;
+    }
+    nav{
+        flex-grow: 4;
+        height: 300px;
+    }
+    section{
+        flex-grow: 8;
+    }
+    article{
+       flex: 1 1 280px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .noflex{
+        display: block;
+    }
+    nav{
+        height: 35px;
+    }
+}
+
+/* XX large devices (larger desktops, 1400px and up) */
+@media (min-width: 1200px) {
+}
